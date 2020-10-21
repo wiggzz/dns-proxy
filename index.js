@@ -48,6 +48,7 @@ server.bind(config.port, config.host, () =>
   console.log(`listening on ${config.host}:${config.port}`)
 );
 
+// from https://github.com/sh1mmer/dnsserver.js
 var qnameToDomain = function (qname) {
   var domain = "";
   for (var i = 0; i < qname.length; i++) {
